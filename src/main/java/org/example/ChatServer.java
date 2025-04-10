@@ -7,8 +7,22 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 public class ChatServer {
 
     public static void main(String[] args) {
-        new ChatServer(8000).run();
+        int port = 8000;
+        if (args.length > 0) {
+            String argv2 = args[0];
+            try {
+                port = Integer.parseInt(argv2);
+                if (port < 1024 || port > 65535) {
+                    throw new OutOfRangeException("port out of range [1024, 65535]");
+                }
+            } catch (NumberFormatException e) {
+                System.err.println("Invalid port number: " + port);
+                throw new RuntimeException(e);
+            }
+        }
+        new ChatServer(port).run();
     }
+
 
     private final int port;
 
