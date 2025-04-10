@@ -115,7 +115,7 @@ users can conduct real-time communication.
     java -jar netty-chat-app-cli.jar
     ```
 
-### 许可证
+### license
 
-该项目采用 MIT 许可证。
+ MIT
 
