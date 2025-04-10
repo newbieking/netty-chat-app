@@ -47,7 +47,7 @@ users can conduct real-time communication.
                            <transformers>
                                <transform
                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                   <mainClass>org.example.ChatClient</mainClass>
+                                   <mainClass>com.newbieking.ChatClient</mainClass>
                                </transform>
                            </transformers>
                        </configuration>
@@ -85,7 +85,7 @@ users can conduct real-time communication.
                            <transformers>
                                <transform
                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                   <mainClass>org.example.ChatServer</mainClass>
+                                   <mainClass>com.newbieking.ChatServer</mainClass>
                                </transform>
                            </transformers>
                        </configuration>

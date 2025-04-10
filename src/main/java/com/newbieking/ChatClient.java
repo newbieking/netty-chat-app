@@ -1,4 +1,4 @@
-package org.example;
+package com.newbieking;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;

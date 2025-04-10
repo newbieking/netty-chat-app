@@ -1,4 +1,4 @@
-package org.example;
+package com.newbieking;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
